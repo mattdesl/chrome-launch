@@ -15,12 +15,14 @@ function launchChrome(uri, opts) {
   var tmp  = opts.dir || quick()
   var args = [
       uri
+    /* 
     , '--no-first-run'
     , '--no-default-browser-check'
     , '--disable-translate'
     , '--disable-default-apps'
     , '--disable-popup-blocking'
     , '--disable-zero-browsers-open-for-tests'
+    */
     , '--user-data-dir=' + tmp
   ].concat(opts.args || [])
 
